@@ -1,0 +1,80 @@
+
+<html>
+<head>
+
+<title>Yiwei Li - DELPHI</title>
+<meta name="keywords" content=", Western University, University of Western Ontario, bioinformatics, Protein protein interaction sites prediction, DELPHI, deeplearning">
+</head>
+
+<body>
+
+<!-- <div align="center"><img src="http://simplehitcounter.com/hit.php?uid=2130106&f=0&b=16777215" border="0" height="18" width="83" alt="web counter"></div> -->
+
+
+<br><br><br>
+<h3>DELPHI: DEep Learning Prediction of Highly probable protein Interaction sites</h3>
+<hr>
+<!-- <hr> -->
+<table >
+	<tr>
+		<td align="CENTER" style="width: 600;">
+			<img height="324" width="488" src="img/DELPHI_arc.png"><br>
+		</td>
+		<td align="left">
+			<b>The DELPHI Web Server</b><br>
+			<a href="http://www.csd.uwo.ca" target="_blank">Department of Computer Science</a><br>      
+			<a href="http://www.uwo.ca" target="_blank">University of Western Ontario</a><br>
+			University of Western Ontario<br>        
+			London, Ontario, N6A 5B7, Canada<br>  
+			Contact: yli922<img src="img/at.gif" align="absbottom" height="17" width="13">uwo.ca; ilie<img src="img/at.gif" align="absbottom" height="17" width="13">uwo.ca<br>
+		</td>
+	</tr>
+</table>
+<hr>
+<h3>Run DELPHI</h3>
+<p>Welcome to the DELPHI web server. DELPHI is a sequence-based deep learning suite for PPI binding sites prediction.</p>
+<p>Please enter the protein sequences and your email address then click predict.</p> 
+<p>The server allows maximum 10 input sequences at a time with minimum 31 amino acid residues.<br> The sequence should be in FASTA format. Each protein should consist of two lines: >[protein_id] and [protein_sequence]. The results will be emailed to you.</p>
+
+<p>Exampel input:</p>
+>Q53WI4<br>
+MVVLKVTLLEGRPPEKKRELVRRLTEMASRLLGEPYEEVRVILYEVRRDQWAAGGVLFSDKEGT<br>
+>Q0TCE9<br>
+MKAKELREKSVEELNTELLNLLREQFNLRMQAASGQLQQSHLLKQVRRDVARVKTLLNEKAGA<br>
+<hr>
+<table>
+  <tr>
+    <td align="left" style="width: 50;">Protein sequences</td>
+    <td align="left" ><textarea rows="2" cols="70" name="seq" ></textarea></td>
+  </tr>
+  <tr>
+    <td align="left" style="width: 50;">Email address</td>
+    <td align="left" ><textarea  rows="1" name="email1"></textarea></td>
+  </tr>
+  <tr>
+    <td><input class="btn" type="submit" name="Button1" value="Run DELPHI" onclick="
+                if (checkform2(10, form1, email1, -21, 5000)==true) {
+                  this.form.submit();
+                  form1.seq.disabled = false;
+                  form1.seq.value='';
+                } 
+                return (false);">  </td>
+  </tr>
+</table>
+
+<hr>
+<h3>Reference</h3>
+<!-- <ul type = "none"> -->
+- Li, Yiwei and Ilie, Lucian, DELPHI: accurate deep ensemble model for protein interaction sites prediction. <a href="https://www.biorxiv.org/content/10.1101/2020.01.31.929570v2">[bioRxiv]</a>, 2020 <a href="https://github.com/lucian-ilie/DELPHI" target = "blank"> Github</a>, 
+<!-- </ul> -->
+
+
+<table align = "RIGHT" width = "455" >
+   <tr  >
+   		<td >
+   			<font color="grey" size="3" face="verdana">Last Updated: June 2020</font>
+   		</td>
+   </tr>
+</table> 
+<body>
+</html>
