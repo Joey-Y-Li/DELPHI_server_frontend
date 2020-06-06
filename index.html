@@ -2,7 +2,16 @@
 <html>
 <head>
 
-<title>Yiwei Li - DELPHI</title>
+<title>DELPHI</title>
+<SCRIPT LANGUAGE="JavaScript">
+  function execute(command) {
+  const exec = require('child_process').exec
+
+  exec(command, (err, stdout, stderr) => {
+    process.stdout.write(stdout)
+  })
+}
+</SCRIPT>
 <meta name="keywords" content=", Western University, University of Western Ontario, bioinformatics, Protein protein interaction sites prediction, DELPHI, deeplearning">
 </head>
 
@@ -54,12 +63,7 @@ MKAKELREKSVEELNTELLNLLREQFNLRMQAASGQLQQSHLLKQVRRDVARVKTLLNEKAGA<br>
   </tr>
   <tr>
     <td><input class="btn" type="submit" name="Button1" value="Run DELPHI" onclick="
-                if (checkform2(10, form1, email1, -21, 5000)==true) {
-                  this.form.submit();
-                  form1.seq.disabled = false;
-                  form1.seq.value='';
-                } 
-                return (false);">  </td>
+                execute('ls')">  </td>
   </tr>
 </table>
 
